@@ -8,7 +8,7 @@ Group:		Applications/Networking
 Source0:	http://dmr.ath.cx/net/darkstat/%{name}-%{version}.tar.gz
 # Source0-md5:	0a1a407acb6f9b35a46d64885c30d08d
 URL:		http://purl.org/net/darkstat/
-Requires:	libpcap >= 0.8.3
+BuildRequires:	libpcap-devel >= 0.8.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,12 +30,12 @@ wszytstkie w bezu¿yteczne ale interesuj±ce statystyki.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
-#install -d $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
 %find_lang %{name}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
