@@ -19,7 +19,7 @@ gathers all sorts of useless but interesting statistics.
 %description -l pl
 darkstat jest sieciowym analizatorem ruchu. Jest prostym po³±czeniem
 sniffera pakietów który uruchamia siê w tle na routerze i zbiera je
-wszytstkie w bezu¿yteczne ale interesuj±ce statystyki.
+wszystkie w bezu¿yteczne ale interesuj±ce statystyki.
 
 %prep
 %setup -q
