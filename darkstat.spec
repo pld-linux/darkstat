@@ -7,7 +7,7 @@ License:	GPL v2
 Group:		Applications/Networking
 Source0:	http://dmr.ath.cx/net/darkstat/%{name}-%{version}.tar.gz
 # Source0-md5:	0a1a407acb6f9b35a46d64885c30d08d
-URL:		http://purl.org/net/darkstat/
+URL:		http://purl.org/net/darkstat
 BuildRequires:	libpcap-devel >= 0.8.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
