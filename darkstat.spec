@@ -1,5 +1,5 @@
 Summary:	darkstat - a network traffic analyzer
-Summary(pl.UTF-8):   darkstat - sieciowy analizator ruchu
+Summary(pl.UTF-8):	darkstat - sieciowy analizator ruchu
 Name:		darkstat
 Version:	2.6
 Release:	1
