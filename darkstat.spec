@@ -1,5 +1,5 @@
 Summary:	darkstat - a network traffic analyzer
-Summary(pl):	darkstat - sieciowy analizator ruchu
+Summary(pl.UTF-8):   darkstat - sieciowy analizator ruchu
 Name:		darkstat
 Version:	2.6
 Release:	1
@@ -16,10 +16,10 @@ darkstat is a network traffic analyzer. It's basically a packet
 sniffer which runs as a background process on a cable/DSL router and
 gathers all sorts of useless but interesting statistics.
 
-%description -l pl
-darkstat jest sieciowym analizatorem ruchu. Jest prostym po³±czeniem
-sniffera pakietów który uruchamia siê w tle na routerze i zbiera je
-wszystkie w bezu¿yteczne ale interesuj±ce statystyki.
+%description -l pl.UTF-8
+darkstat jest sieciowym analizatorem ruchu. Jest prostym poÅ‚Ä…czeniem
+sniffera pakietÃ³w ktÃ³ry uruchamia siÄ™ w tle na routerze i zbiera je
+wszystkie w bezuÅ¼yteczne ale interesujÄ…ce statystyki.
 
 %prep
 %setup -q
