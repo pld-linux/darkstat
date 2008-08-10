@@ -1,14 +1,15 @@
 Summary:	darkstat - a network traffic analyzer
 Summary(pl.UTF-8):	darkstat - sieciowy analizator ruchu
 Name:		darkstat
-Version:	2.6
+Version:	3.0.711
 Release:	1
 License:	GPL v2
 Group:		Applications/Networking
-Source0:	http://dmr.ath.cx/net/darkstat/%{name}-%{version}.tar.gz
-# Source0-md5:	0a1a407acb6f9b35a46d64885c30d08d
+Source0:	http://dmr.ath.cx/net/darkstat/%{name}-%{version}.tar.bz2
+# Source0-md5:	e72245b72ff4ef3bfcc8ca064f99e45b
 URL:		http://purl.org/net/darkstat
 BuildRequires:	libpcap-devel >= 0.8.3
+BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,7 +26,8 @@ wszystkie w bezużyteczne ale interesujące statystyki.
 %setup -q
 
 %build
-%configure
+%configure \
+	--with-chroot-dir=/usr/share/empty
 %{__make}
 
 %install
@@ -34,13 +36,11 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%find_lang %{name}
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f %{name}.lang
+%files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog README
+%doc AUTHORS NEWS README THANKS export-format.txt
 %attr(755,root,root) %{_sbindir}/*
 %{_mandir}/man1/*
