@@ -2,7 +2,7 @@ Summary:	darkstat - a network traffic analyzer
 Summary(pl.UTF-8):	darkstat - sieciowy analizator ruchu
 Name:		darkstat
 Version:	3.0.711
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/Networking
 Source0:	http://dmr.ath.cx/net/darkstat/%{name}-%{version}.tar.bz2
